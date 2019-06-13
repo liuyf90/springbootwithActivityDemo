@@ -48,4 +48,14 @@ public class ActivityConsumerServiceImpl implements ActivityConsumerService {
         System.out.println("method startActivityDemo end....");
         return false;
     }
+
+    @Override
+    public void startmyprocess() {
+        Map<String,Object> map = new HashMap<String,Object>();
+        map.put("apply","zhangsan");
+        map.put("approve","lisi");
+        runtimeService.startProcessInstanceByKey("leave",map);
+        System.out.println("we have now "+runtimeService.createProcessInstanceQuery().count()+"proccess instance");
+
+    }
 }
