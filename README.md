@@ -14,3 +14,10 @@
 2. http://localhost:8987/activityService/startActivityDemo
    
      	观察数据库中activiti表的变化
+     	
+     	
+3. 服务启动后执行
+		
+		curl localhost:8987/activityService/start-my-process
+		
+		观察控制台输出
