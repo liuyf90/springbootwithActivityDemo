@@ -58,4 +58,6 @@ public class ActivityConsumerServiceImpl implements ActivityConsumerService {
         System.out.println("we have now "+runtimeService.createProcessInstanceQuery().count()+"proccess instance");
 
     }
+
+
 }
